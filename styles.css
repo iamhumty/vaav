@@ -1,0 +1,138 @@
+body {
+    background-color: #121212; /* matte black */
+    margin: 0;
+    font-family: Arial, sans-serif; /* or any other preferred font-family */
+    height: 100vh; /* This makes sure your body covers the entire viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-container {
+    background-color: #ffffff; /* or any light color of your preference */
+    /* Other styling properties like padding, border-radius, box-shadow, etc. */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%; /* This ensures the container doesn't stretch too much. */
+    text-align: center; /* Aligns the content within the container to the center. */
+}
+
+.form-input {
+    width: calc(100% - 20px); /* Reduces width, adjusting for the padding */
+    padding: 10px; /* If your input isn't already padded */
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc; /* Just a suggestion: give it a border */
+    border-radius: 5px; /* Slight rounding of input corners */
+}
+
+
+.signin-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+.signin-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070e0; /* eBay-like blue color */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+    background-color: #0058b0; /* A darker blue for hover effect */
+}
+
+.options-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.options-group a {
+    text-decoration: none;
+    color: #0070e0; /* eBay-like blue color */
+    transition: color 0.3s ease;
+}
+
+.options-group a:hover {
+    color: #0058b0; /* A darker blue for hover effect */
+}
+
+.separator {
+    margin: 20px 0;
+    color: #a9a9a9; /* Gray text color, choose what fits your design */
+    text-align: center;
+}
+
+.google-btn {
+    cursor: pointer;
+    /* Additional styling for the button (colors, padding, etc.) if needed */
+}
+
+.google-btn i {
+    font-size: 30px; /* Adjust icon size */
+    
+}
+
+.signup-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.signup-container input[type=text],
+.signup-container input[type=tel],
+.signup-container input[type=email],
+.signup-container input[type=date],
+.signup-container select,
+.signup-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-container button {
+    width: 100%;
+    background-color: #4D4A4A;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-container button:hover {
+    background-color: #474545;
+}

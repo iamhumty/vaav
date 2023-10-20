@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <div class="signup-container">
+        <form id="signup-form">
+            <h2>Sign Up</h2>
+    
+            <!-- Full Name -->
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="XXX" required>
+    
+            <!-- Phone Number -->
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" placeholder="XXX" required>
+    
+            <!-- Gender -->
+            <span>Gender</span>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+    <br>
+            <!-- Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="XXX" required>
+    
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth (dd/mm/yyyy)</label>
+            <input type="date" id="dob" placeholder="dd/mm/yyyy" required>
+    
+            <!-- Atoll Selection -->
+            <label for="atoll">Select Atoll</label>
+            <select id="atoll" onchange="populateIslands()">
+                <option value="">XXX</option>
+                <!-- Populate with your specific atoll options -->
+                <option value="atoll1">Haa Alifu</option>
+                <option value="atoll2">Atoll 2</option>
+                <!-- ... other atolls ... -->
+            </select>
+    
+            <!-- Island Selection based on Atoll -->
+            <label for="island">Select Island</label>
+            <select id="island">
+                <!-- Options will be populated based on atoll selection -->
+            </select>
+    
+            <!-- Address -->
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="XXX" rows="4" required></textarea>
+    
+            <!-- Sign Up button -->
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+
+<script src="atolls.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

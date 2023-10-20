@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <div class="signin-container">
+        <form>
+        <form action="/login" method="post" class="signin-form">
+            <h2 class="signin-title">Sign in</h2>
+
+            <div class="form-group">
+                <input type="email" class="form-input" id="inputEmail" placeholder="Email address" required autofocus>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-input" id="inputPassword" placeholder="Password" required>
+            </div>
+
+            <div class="input-group">
+                <button type="submit" class="signin-button">Sign in</button>
+            </div>
+                        <!-- Separator -->
+                        <div class="separator">or sign in with</div>
+
+                        <!-- Google Sign-In -->
+                        <div class="google-btn">
+                            <i class="fab fa-google"></i> <!-- Font Awesome Google icon -->
+                        </div>
+            <div class="options-group">
+                <a href="#" class="password-reset">Forgot password?</a>
+                <a href="/vaavu/signup.html" class="register-link">Register</a>
+
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
